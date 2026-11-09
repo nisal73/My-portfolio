@@ -145,12 +145,32 @@ const About = () => {
               Actively seeking an internship opportunity as a **Full Stack Developer** to apply and grow my technical capabilities and teamwork skills through practical industry experience, contributing to impactful web systems.
             </p>
 
-            <div className="about-quick-meta mt-4">
-              <div className="meta-pill">
-                <Languages size={15} /> <span>Languages: <strong>Sinhala, English</strong></span>
+            {/* Professional Languages Showcase */}
+            <div className="about-languages-card mt-4">
+              <div className="languages-header">
+                <span className="icon-wrapper"><Languages size={18} /></span>
+                <h4 className="languages-title">Language Proficiency</h4>
               </div>
-              <div className="meta-pill">
-                <MapPin size={15} /> <span>Location: <strong>Tangalle & Homagama, Sri Lanka</strong></span>
+              <div className="languages-grid">
+                <div className="lang-box">
+                  <div className="lang-top">
+                    <span className="lang-name">Sinhala</span>
+                    <span className="lang-badge native">Native</span>
+                  </div>
+                  <div className="lang-progress-bg">
+                    <div className="lang-progress-fill" style={{ width: '100%' }}></div>
+                  </div>
+                </div>
+
+                <div className="lang-box">
+                  <div className="lang-top">
+                    <span className="lang-name">English</span>
+                    <span className="lang-badge pro">Professional Working</span>
+                  </div>
+                  <div className="lang-progress-bg">
+                    <div className="lang-progress-fill" style={{ width: '85%' }}></div>
+                  </div>
+                </div>
               </div>
             </div>
 

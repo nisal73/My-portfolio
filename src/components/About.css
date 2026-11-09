@@ -46,26 +46,93 @@
   color: var(--text-primary);
 }
 
-.about-quick-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.meta-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
+/* Professional Languages Card */
+.about-languages-card {
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
-  padding: 0.35rem 0.85rem;
-  border-radius: 99px;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all var(--transition-fast);
 }
 
-.meta-pill strong {
+.about-languages-card:hover {
+  border-color: rgba(var(--primary-rgb), 0.4);
+}
+
+.languages-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.languages-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: var(--text-primary);
+}
+
+.languages-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.lang-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.lang-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lang-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.lang-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.55rem;
+  border-radius: 99px;
+  letter-spacing: 0.02em;
+}
+
+.lang-badge.native {
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--success);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.lang-badge.pro {
+  background: rgba(var(--primary-rgb), 0.12);
+  color: var(--primary);
+  border: 1px solid rgba(var(--primary-rgb), 0.25);
+}
+
+.lang-progress-bg {
+  width: 100%;
+  height: 6px;
+  background: var(--bg-secondary);
+  border-radius: 99px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.lang-progress-fill {
+  height: 100%;
+  background: var(--accent-gradient);
+  border-radius: 99px;
+  transition: width var(--transition-normal);
 }
 
 .btn-about-cv {
