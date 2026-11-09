@@ -164,10 +164,10 @@ const CvModal = ({ isOpen, onClose }) => {
           <section className="cv-section">
             <h3 className="cv-section-title">CERTIFICATIONS</h3>
             <div className="cv-cert-item">
-              <strong>AI/ML Engineer – Stage 1</strong> – Centre for Open and Distance Education, Faculty of Computing, SLIIT
+              <strong>AI/ML Engineer – Stage 1</strong> – Center for Open and Distance Education, Faculty of Computing, SLIIT
             </div>
             <div className="cv-cert-item mt-1">
-              <strong>Python for Beginners</strong> – Centre for Open & Distance Learning (CODL), University of Moratuwa
+              <strong>Python for Beginners</strong> – Center for Open & Distance Learning (CODL), University of Moratuwa
               <div className="cv-cert-sub">Conducted by the Department of Computer Science & Engineering, Faculty of Engineering.</div>
             </div>
           </section>

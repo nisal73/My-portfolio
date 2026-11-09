@@ -91,13 +91,13 @@ const About = () => {
   const certifications = [
     {
       title: 'AI/ML Engineer – Stage 1',
-      issuer: 'Centre for Open and Distance Education, Faculty of Computing, SLIIT',
+      issuer: 'Center for Open and Distance Education, Faculty of Computing, SLIIT',
       description: 'Foundations of Artificial Intelligence & Machine Learning, data preprocessing, machine learning algorithms, and real-world predictive modeling.',
       badge: 'SLIIT Certified'
     },
     {
       title: 'Python for Beginners',
-      issuer: 'Centre for Open & Distance Learning (CODL), University of Moratuwa',
+      issuer: 'Center for Open & Distance Learning (CODL), University of Moratuwa',
       subnote: 'Conducted by the Department of Computer Science & Engineering, Faculty of Engineering.',
       description: 'Comprehensive introduction to Python programming syntax, control structures, functional design, data structures, and algorithmic logic.',
       badge: 'UoM Certified'
