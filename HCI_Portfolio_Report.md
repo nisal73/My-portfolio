@@ -97,7 +97,8 @@ At least three of Nielsen's ten heuristics were implemented during development:
 * **Visual Modals for Details**: Rather than crowding the Projects section with text descriptions, each project displays a summary. Clicking "Launch Simulation" opens an overlay modal with detailed specs and an interactive sandbox interface. This keeps the primary page clean.
 
 #### Heuristic #3: User Control and Freedom
-* **Modal Escapes**: The Project simulation modal features a visible `X` close button and closes when clicking outside the modal box, allowing users to exit easily.
+* **Modal Escapes**: The Project simulation, CV preview, and Certificate preview modals feature visible `X` close buttons, ESC keyboard shortcuts, and close when clicking outside the modal box, allowing users to exit easily at any time.
+* **Dual View Switchers**: Users have total control to switch between official PDF documents and high-contrast digital credential views.
 * **Theme Switching**: Users can toggle between Dark and Light mode at any time using the header toggle button.
 
 ### 3.3 Accessibility and Responsiveness Features

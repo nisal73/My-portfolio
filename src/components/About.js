@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   GraduationCap, 
   Award, 
@@ -12,11 +12,24 @@ import {
   Mail, 
   Phone, 
   MapPin, 
-  Languages 
+  Languages,
+  Eye,
+  Download,
+  ExternalLink,
+  Calendar,
+  ShieldCheck
 } from 'lucide-react';
+import CertificateModal from './CertificateModal';
 import './About.css';
 
 const About = () => {
+  const [isCertModalOpen, setIsCertModalOpen] = useState(false);
+  const [activeCert, setActiveCert] = useState(null);
+
+  const handleOpenCert = (cert) => {
+    setActiveCert(cert);
+    setIsCertModalOpen(true);
+  };
 
   const educationTimeline = [
     {
@@ -81,19 +94,37 @@ const About = () => {
     }
   ];
 
-  // Certifications directly from CV
+  // Certifications directly from CV & Verified Documents
   const certifications = [
     {
+      id: 'sliit-aiml',
       title: 'AI/ML Engineer – Stage 1',
+      shortTitle: 'AI/ML Engineer',
       issuer: 'Center for Open and Distance Education, Faculty of Computing, SLIIT',
+      shortIssuer: 'SLIIT Computing',
+      issueDate: 'November 01, 2026',
+      certId: 'dcpudor3hk',
+      verifyUrl: null,
+      pdfUrl: `${process.env.PUBLIC_URL}/certificates/SLIIT_AIML_Stage1_Chamod_Nisal.pdf`,
+      downloadName: 'Chamod_Nisal_SLIIT_AIML_Stage1.pdf',
       description: 'Foundations of Artificial Intelligence & Machine Learning, data preprocessing, machine learning algorithms, and real-world predictive modeling.',
+      skills: ['AI/ML Algorithms', 'Predictive Modeling', 'Data Preprocessing', 'Feature Engineering'],
       badge: 'SLIIT Certified'
     },
     {
+      id: 'uom-python',
       title: 'Python for Beginners',
+      shortTitle: 'Python for Beginners',
       issuer: 'Center for Open & Distance Learning (CODL), University of Moratuwa',
+      shortIssuer: 'CODL, Univ. of Moratuwa',
       subnote: 'Conducted by the Department of Computer Science & Engineering, Faculty of Engineering.',
+      issueDate: 'October 11, 2026',
+      certId: 'pkoERxaYx6',
+      verifyUrl: 'https://open.uom.lk/verify',
+      pdfUrl: `${process.env.PUBLIC_URL}/certificates/UoM_CODL_Python_Chamod_Nisal.pdf`,
+      downloadName: 'Chamod_Nisal_UoM_Python_Certificate.pdf',
       description: 'Comprehensive introduction to Python programming syntax, control structures, functional design, data structures, and algorithmic logic.',
+      skills: ['Python Syntax', 'Data Structures', 'Algorithmic Logic', 'Functional Programming'],
       badge: 'UoM Certified'
     }
   ];
@@ -232,25 +263,74 @@ const About = () => {
           </div>
         </div>
 
-        {/* Certifications Section (Direct from CV) */}
+        {/* Certifications Section (Direct from CV & Verified Documents) */}
         <div className="about-certs-container mt-5">
           <div className="section-header-compact text-center">
             <h3 className="column-title text-center">Certifications</h3>
             <p className="section-desc-compact">
-              Verified certifications from recognized academic and technology institutions.
+              Verified certifications from recognized academic and technology institutions. Click any certificate to preview, verify, or download.
             </p>
           </div>
 
           <div className="certs-grid">
-            {certifications.map((cert, idx) => (
-              <div key={idx} className="cert-card glass-panel hover-lift">
+            {certifications.map((cert) => (
+              <div key={cert.id} className="cert-card glass-panel hover-lift">
                 <div className="cert-badge-row">
                   <span className="cert-tag"><Award size={14} /> {cert.badge}</span>
+                  <span className="cert-date-tag"><Calendar size={13} /> {cert.issueDate}</span>
                 </div>
+                
                 <h4 className="cert-title">{cert.title}</h4>
                 <div className="cert-issuer text-gradient">{cert.issuer}</div>
                 {cert.subnote && <div className="cert-subnote">{cert.subnote}</div>}
+                
                 <p className="cert-desc">{cert.description}</p>
+
+                {/* Credential ID metadata */}
+                <div className="cert-meta-row">
+                  <span className="cert-meta-label">Credential ID:</span>
+                  <span className="cert-meta-val code-font">{cert.certId}</span>
+                </div>
+
+                {/* Skills tags */}
+                <div className="cert-skills-chips">
+                  {cert.skills.map((skill, sIdx) => (
+                    <span key={sIdx} className="cert-chip">{skill}</span>
+                  ))}
+                </div>
+
+                {/* Card Action Buttons */}
+                <div className="cert-card-actions">
+                  <button 
+                    type="button"
+                    onClick={() => handleOpenCert(cert)}
+                    className="btn-cert-preview hover-lift"
+                    title={`Preview ${cert.title}`}
+                  >
+                    <Eye size={15} /> Preview Certificate
+                  </button>
+
+                  <a 
+                    href={cert.pdfUrl} 
+                    download={cert.downloadName} 
+                    className="btn-cert-icon-btn"
+                    title={`Download official PDF: ${cert.downloadName}`}
+                  >
+                    <Download size={15} />
+                  </a>
+
+                  {cert.verifyUrl && (
+                    <a 
+                      href={cert.verifyUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="btn-cert-icon-btn verify-link-btn"
+                      title="Verify online on official university portal"
+                    >
+                      <ShieldCheck size={15} />
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
@@ -293,6 +373,14 @@ const About = () => {
         </div>
 
       </div>
+
+      {/* Interactive Certificate Preview Modal */}
+      <CertificateModal 
+        isOpen={isCertModalOpen} 
+        onClose={() => setIsCertModalOpen(false)} 
+        initialCert={activeCert}
+        certificates={certifications}
+      />
     </section>
   );
 };
