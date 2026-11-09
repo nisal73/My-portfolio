@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageSquare, Mail, ArrowDown, FileText, MapPin, Sparkles, Briefcase } from 'lucide-react';
+import { MessageSquare, Mail, ArrowDown, FileText, Sparkles, Briefcase } from 'lucide-react';
 import { Github, Linkedin } from './Icons';
 import CvModal from './CvModal';
 import './Home.css';
@@ -48,20 +48,14 @@ const Home = () => {
   return (
     <section id="home" className="home-section section">
       <div className="home-container container">
-        {/* Name and welcome badge at top */}
+        {/* Name and role at top */}
         <div className="home-header animate-fade-in">
-          <div className="welcome-badge">
-            <span className="badge-dot"></span>
-            <span className="badge-text">Available for Full Stack Developer Internship</span>
-          </div>
           <h1 className="home-title">
             Hi, I'm <span className="text-gradient">Chamod Nisal</span>
           </h1>
           <div className="home-role-tag">
             <Briefcase size={16} className="role-icon" />
             <span className="role-title">Full Stack Developer – Intern</span>
-            <span className="role-dot">•</span>
-            <span className="location-tag"><MapPin size={15} /> Tangalle, Sri Lanka</span>
           </div>
         </div>
 
