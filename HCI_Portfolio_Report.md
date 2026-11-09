@@ -170,6 +170,6 @@ This project directly supports professional and academic development goals by:
 
 ## 8. Deployed Website Link
 
-The React portfolio website is live and accessible at the following URL:
-**Live Deployment Link**: `[PASTE YOUR LIVE DEPLOYED LINK HERE (e.g. Netlify/Vercel URL)]`
-*(Please ensure the website is compiled using `npm run build` and uploaded to your preferred hosting platform before submitting the report).*
+The React portfolio website is live, fully deployed, and accessible at the following URL:
+* **Live Deployment Link**: [https://nisal73.github.io/My-portfolio](https://nisal73.github.io/My-portfolio)
+* **GitHub Repository Link**: [https://github.com/nisal73/My-portfolio](https://github.com/nisal73/My-portfolio)
