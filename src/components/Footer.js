@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronUp, Heart } from 'lucide-react';
+import { ChevronUp } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -29,14 +29,11 @@ const Footer = () => {
           <p className="copyright-text">
             &copy; {new Date().getFullYear()} <span className="text-gradient font-bold">Chamod Nisal</span>. All Rights Reserved.
           </p>
-          <p className="footer-role">
-            Full Stack Developer – Intern • Tangalle & Homagama, Sri Lanka
-          </p>
         </div>
 
         <div className="footer-right">
-          <p className="footer-affiliation">
-            Institute of Technology, University of Moratuwa
+          <p className="footer-role">
+            Full Stack Developer – Intern • Tangalle & Colombo, Sri Lanka
           </p>
         </div>
       </div>
