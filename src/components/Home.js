@@ -88,9 +88,9 @@ const Home = () => {
           </h2>
 
           <p className="home-description">
-            Motivated Information Technology undergraduate with hands-on experience building responsive React front ends 
-            and full-stack applications backed by relational databases. Creative problem solver with a strong passion 
-            for learning new technologies, seeking an internship to apply and grow technical and teamwork skills through practical industry experience.
+            Motivated Information Technology undergraduate with hands-on experience building full-stack applications 
+            backed by relational databases. Creative problem solver with a strong passion for learning new technologies, 
+            seeking an internship to apply and grow technical and teamwork skills through practical industry experience.
           </p>
 
           {/* Call to Actions */}
