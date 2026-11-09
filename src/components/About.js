@@ -30,7 +30,7 @@ const About = () => {
       degree: 'Information Technology',
       institution: 'Institute of Technology, University of Moratuwa',
       location: 'Homagama, Sri Lanka',
-      description: 'Hands-on coursework covering Software Engineering, Human-Computer Interaction (HCI), Database Management Systems, Data Structures & Algorithms, and Full-Stack Web Development. Specializing in responsive React front-ends backed by secure relational databases.',
+      description: 'Hands-on coursework covering Software Engineering, Database Management Systems, Data Structures & Algorithms, Full-Stack Web Development...',
       icon: <GraduationCap size={22} />
     },
     {
@@ -135,21 +135,14 @@ const About = () => {
               <span className="icon-wrapper"><Heart size={20} /></span> Professional Summary
             </h3>
             <p className="bio-text">
-              I am a motivated **Information Technology undergraduate** at the **Institute of Technology, University of Moratuwa**, 
-              with hands-on experience building responsive React front ends and full-stack applications backed by relational databases.
-            </p>
-            <p className="bio-text">
-              As a creative problem solver with a strong passion for learning new technologies, I focus on applying 
-              **Human-Computer Interaction (HCI)** techniques to deliver software that is not only robust and secure 
-              on the backend, but also highly intuitive, accessible, and enjoyable for users.
+              I am a motivated Information Technology undergraduate at the **Institute of Technology, University of Moratuwa**, with hands-on experience building full stack applications backed by relational databases. As a creative problem solver with a strong passion for learning new technologies.
             </p>
             
             <h3 className="bio-title mt-4">
               <span className="icon-wrapper"><Award size={20} /></span> Internship Objective
             </h3>
             <p className="bio-text">
-              Actively seeking an internship opportunity as a **Full Stack Developer** to apply and grow my technical 
-              capabilities and teamwork skills through practical industry experience, contributing to impactful web systems.
+              Actively seeking an internship opportunity as a **Full Stack Developer** to apply and grow my technical capabilities and teamwork skills through practical industry experience, contributing to impactful web systems.
             </p>
 
             <div className="about-quick-meta mt-4">

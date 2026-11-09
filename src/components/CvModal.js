@@ -62,7 +62,7 @@ const CvModal = ({ isOpen, onClose }) => {
           <section className="cv-section">
             <h3 className="cv-section-title">PROFESSIONAL SUMMARY</h3>
             <p className="cv-summary-text">
-              Motivated Information Technology undergraduate at the Institute of Technology, University of Moratuwa, with hands-on experience building responsive React front ends and full-stack applications backed by relational databases. Creative problem solver with a strong passion for learning new technologies, seeking an internship to apply and grow my technical and teamwork skills through practical industry experience.
+              I am a motivated Information Technology undergraduate at the Institute of Technology, University of Moratuwa, with hands-on experience building full stack applications backed by relational databases. As a creative problem solver with a strong passion for learning new technologies, seeking an internship to apply and grow my technical capabilities and teamwork skills through practical industry experience.
             </p>
           </section>
 

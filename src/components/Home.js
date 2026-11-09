@@ -88,9 +88,10 @@ const Home = () => {
           </h2>
 
           <p className="home-description">
-            Motivated Information Technology undergraduate with hands-on experience building full-stack applications 
-            backed by relational databases. Creative problem solver with a strong passion for learning new technologies, 
-            seeking an internship to apply and grow technical and teamwork skills through practical industry experience.
+            I am a motivated Information Technology undergraduate at the Institute of Technology, University of Moratuwa, 
+            with hands-on experience building full stack applications backed by relational databases. As a creative problem solver 
+            with a strong passion for learning new technologies, seeking an internship to apply and grow my technical capabilities 
+            and teamwork skills through practical industry experience.
           </p>
 
           {/* Call to Actions */}
