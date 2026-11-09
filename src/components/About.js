@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { 
   GraduationCap, 
   Award, 
   BookOpen, 
   Heart, 
-  Code2, 
   Database, 
   Layout, 
   GitBranch, 
@@ -13,16 +12,11 @@ import {
   Mail, 
   Phone, 
   MapPin, 
-  Languages, 
-  ExternalLink,
-  CheckCircle2,
-  FileText
+  Languages 
 } from 'lucide-react';
-import CvModal from './CvModal';
 import './About.css';
 
 const About = () => {
-  const [isCvOpen, setIsCvOpen] = useState(false);
 
   const educationTimeline = [
     {
@@ -173,12 +167,6 @@ const About = () => {
                 </div>
               </div>
             </div>
-
-            <div className="about-cv-cta mt-4">
-              <button onClick={() => setIsCvOpen(true)} className="btn-about-cv">
-                <FileText size={16} /> View & Download CV (PDF)
-              </button>
-            </div>
           </div>
 
           {/* Education Timeline */}
@@ -305,9 +293,6 @@ const About = () => {
         </div>
 
       </div>
-
-      {/* CV Modal View */}
-      <CvModal isOpen={isCvOpen} onClose={() => setIsCvOpen(false)} />
     </section>
   );
 };

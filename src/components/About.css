@@ -135,28 +135,6 @@
   transition: width var(--transition-normal);
 }
 
-.btn-about-cv {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.7rem 1.4rem;
-  background: rgba(var(--primary-rgb), 0.12);
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  font-size: 0.9rem;
-  font-weight: 700;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-}
-
-.btn-about-cv:hover {
-  background: var(--primary);
-  color: #ffffff;
-  box-shadow: var(--glow-shadow);
-  transform: translateY(-2px);
-}
-
 .column-title {
   font-size: 1.75rem;
   margin-bottom: 1.25rem;
