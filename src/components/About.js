@@ -176,7 +176,7 @@ const About = () => {
 
             <div className="about-cv-cta mt-4">
               <button onClick={() => setIsCvOpen(true)} className="btn-about-cv">
-                <FileText size={16} /> Open Verified CV Document
+                <FileText size={16} /> View & Download CV (PDF)
               </button>
             </div>
           </div>

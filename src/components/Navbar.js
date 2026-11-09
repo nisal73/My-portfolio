@@ -79,9 +79,9 @@ const Navbar = () => {
             <button
               onClick={() => setIsCvOpen(true)}
               className="nav-cv-btn"
-              aria-label="View Curriculum Vitae"
+              aria-label="View and Download Curriculum Vitae"
             >
-              <FileText size={15} /> CV
+              <FileText size={15} /> CV (PDF)
             </button>
 
             <button
@@ -124,7 +124,7 @@ const Navbar = () => {
                 }}
                 className="mobile-cv-btn"
               >
-                <FileText size={16} /> View Full CV
+                <FileText size={16} /> View & Download CV
               </button>
             </li>
           </ul>

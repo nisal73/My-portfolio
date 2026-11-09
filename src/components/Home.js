@@ -105,9 +105,9 @@ const Home = () => {
             <button 
               onClick={() => setIsCvOpen(true)} 
               className="btn-cv hover-lift"
-              aria-label="View full curriculum vitae"
+              aria-label="View and download curriculum vitae"
             >
-              <FileText size={16} /> View Full CV
+              <FileText size={16} /> View & Download CV
             </button>
             <button 
               onClick={() => handleScrollTo('contact')} 
