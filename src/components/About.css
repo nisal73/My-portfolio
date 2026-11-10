@@ -391,47 +391,8 @@
   color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.55;
-  margin-bottom: 1rem;
-}
-
-.cert-meta-row {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.8rem;
-  padding: 0.45rem 0.75rem;
-  background: rgba(var(--primary-rgb), 0.05);
-  border: 1px dashed rgba(var(--primary-rgb), 0.25);
-  border-radius: 8px;
-  margin-bottom: 0.85rem;
-}
-
-.cert-meta-label {
-  color: var(--text-muted);
-  font-weight: 600;
-}
-
-.cert-meta-val.code-font {
-  font-family: 'Fira Code', monospace;
-  color: var(--primary);
-  font-weight: 600;
-}
-
-.cert-skills-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
   margin-bottom: 1.5rem;
-}
-
-.cert-chip {
-  font-size: 0.72rem;
-  font-weight: 600;
-  padding: 0.2rem 0.55rem;
-  border-radius: 6px;
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
-  border: 1px solid var(--border-color);
+  flex-grow: 1;
 }
 
 .cert-card-actions {

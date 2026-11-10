@@ -286,19 +286,6 @@ const About = () => {
                 
                 <p className="cert-desc">{cert.description}</p>
 
-                {/* Credential ID metadata */}
-                <div className="cert-meta-row">
-                  <span className="cert-meta-label">Credential ID:</span>
-                  <span className="cert-meta-val code-font">{cert.certId}</span>
-                </div>
-
-                {/* Skills tags */}
-                <div className="cert-skills-chips">
-                  {cert.skills.map((skill, sIdx) => (
-                    <span key={sIdx} className="cert-chip">{skill}</span>
-                  ))}
-                </div>
-
                 {/* Card Action Buttons */}
                 <div className="cert-card-actions">
                   <button 
